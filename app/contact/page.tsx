@@ -56,7 +56,7 @@ const ContactPage = () => {
             </ul>
           </div>
           {/* Contact Form */}
-          <ContactFormPage />
+          <ContactFormPage />d
         </div>
       </div>
     </div>
