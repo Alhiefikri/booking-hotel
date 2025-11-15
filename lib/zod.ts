@@ -7,6 +7,10 @@ export const RoomSchema = object({
   price: coerce.number().gt(0, "Price  must be greather than 0"),
   amenities: array(string()).nonempty(),
 });
+export const ReserverSchema = object({
+  name: string().min(1, "Name at least 1 characters"),
+  phone: string().min(10, "Name at least 10 number"),
+});
 
 export const ContactSchema = object({
   name: string().min(6, "Name at least 6 characters"),
